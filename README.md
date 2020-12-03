@@ -6,8 +6,8 @@ The AgentScriptCC DSL is a language inspired by the BDI agent programming langua
 
 The CC stands for cross-compiler: given an agent script, the output is a python program to control an agent in performing deliberations and then actions, depending on percepts, in an environment.
 
-A single-threaded version can be used for:
-- integrate intentional agents in a discrete-event simulator
+A single-threaded version can be in principle used for:
+- integrate intentional agents in a discrete-event simulator (e.g. MESA)
 - having individual intentional agents running as web services or independent processes.
 
 The agent (mind) needs to interact with a body (part of the environment) to perform actions.  
@@ -18,7 +18,7 @@ $ scriptcc examples/robot/robot.ascript
 ```
 At the moment, the script returns a Python program defining the behavioural component of the agent (see `examples/robot/robot_agent_script.py`).
 
-To see how a running agent script will look like, looks at `examples/robot/robot_manual_script.py` 
+To see how a running agent script looks like, see `examples/robot/robot_manual_script.py` 
 
 **Requirements**
 
