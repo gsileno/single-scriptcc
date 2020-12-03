@@ -18,7 +18,7 @@ $ scriptcc examples/robot/robot.ascript
 ```
 At the moment, the script returns a Python program defining the behavioural component of the agent (see `examples/robot/robot_agent_script.py`).
 
-To see how a running agent script looks like, see `examples/robot/robot_manual_script.py` 
+To see how a complete running agent script will look like, see `examples/robot/robot_manual_script.py` 
 
 **Requirements**
 
