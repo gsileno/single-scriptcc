@@ -1,0 +1,17 @@
+fresh :- temp(T), T < 40.
+veryhot :- temp(T), T > 70.
+uncharged :- battery(B), B < 20.
+
++veryhot => !~veryhot.
++uncharged => !~uncharged.
+
++~fresh => !fresh.
+
++!~veryhot => !@open.
++!fresh => !@open.
++!~uncharged => !@charge.
+
++!@open: near_door => #open_door().
++!@open => #go_door(); !@open.
++!@charge: near_plug => #charge_battery().
++!@charge => #go_plug(); !@charge.
