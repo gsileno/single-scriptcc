@@ -1,4 +1,4 @@
-# singleCC 
+# single-scriptCC 
 
 A single-threaded version of AgentScriptCC agents in python.
 
